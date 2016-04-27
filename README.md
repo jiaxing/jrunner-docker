@@ -18,5 +18,5 @@ docker run --rm -v $(pwd):/app jaysong/gradle:8-2.13 installDist
 ```
 then run it by
 ```
-docker run --rm -v $(pwd)/build/install/app:/app jrunner ./bin/app
+docker run --rm -v $(pwd)/build/install/app:/app jaysong/jrunner:8-jre-alpine ./bin/app
 ```
