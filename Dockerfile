@@ -4,7 +4,7 @@ RUN apk upgrade --update && \
     apk add --update bash && \
     rm -rf /tmp/* /var/cache/apk/*
 
-VOLUME /app
+VOLUME ["/app", "/data"]
 WORKDIR /app
 
 CMD ["/bin/bash"]
