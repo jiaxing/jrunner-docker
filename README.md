@@ -20,3 +20,8 @@ then run it by
 ```
 docker run --rm -v $(pwd)/build/install/app:/app jaysong/jrunner:8-jre-alpine ./bin/app
 ```
+
+To run web services that listens on certain ports, use
+```
+docker run -it --rm --expose 8080 -p 8080:8080 -v $(pwd)/tmp:/data -v $(pwd)/build/install/app:/app jaysong/jrunner:8-jre-alpine ./bin/app
+```
